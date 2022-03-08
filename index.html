@@ -12,10 +12,102 @@
 
 <body>
 
+    <header class="header">
+        <div class="container">
+            <h1 class="Вебинар">Вебинар</h1>
+        </div>
+    </header>
 
-    <p class="text">Привет! На улице Изучаем гит</p>
+    <main>
+        <div class="container">
+            <h2 class="forms">Заявка на тех. осмотр</h2>
+            <form>
+                <fieldset>
+                    <legend>Пожалуйста, опишите ваш автомобить</legend>
+                    Марка автомобиля <input type="text" name="trademark" placeholder="Введите марку авто">
+                    <br>
+                    <br>
+                    Модель <input type="text" name="model" placeholder="Введите модель" required="required">
+
+                    <p>Коробка передач</p>
+                    АКП <input type="radio" name="gear" value="auto" checked>
+                    МКП <input type="radio" name="gear" value="manual" checked>
+                    <br>
+                    <br>
+                    Необходимо проверить
+                    <br>
+                    <input type="checkbox" name="type1" value="brake"> тормозная жидкость<br>
+                    <input type="checkbox" name="type2" value="parall"> сход развал<br>
+                    <input type="checkbox" name="type3" value="coolar"> охлаждающая жидкость<br>
+                    <input type="checkbox" name="type4" value="suspencion"> подвеска<br>
+                    <input type="checkbox" name="type5" value="oil"> масло<br>
+                    <br>
+                    Какое масло заливать?<br>
+                    <select name="oil list">
+                        <option label=""></option>
+                        <option label="shell">shell</option>
+                        <option label="castrol">castrol</option>
+                        <option label="oleina" disabled>oleina</option>
+                    </select>
+                    <br>
+                    <br>
+                    Цвет покраски суппортов<br>
+                    <input type="color" list="colorlist" value="#ccBBBB">
+                    <datalist id="colorlist">
+                        <option value="#ffBBBB" label="красный"></option>
+                        <option value="#09999" label="зеленый"></option>
+                        <option value="#0000FF" label="синий"></option>
+                    </datalist>
+                    <br>
+                    <br>
+                    Дата визита<br>
+                    <input type="date" name="visit" value="2020-11-29" min="2020-11-28" max="2020-11-29">
+                    <br>
+                    <br>
+                    Ваша почта<br>
+                    <input type="email" name="mail">
+                    <br>
+                    <br>
+                    Ваш телефон<br>
+                    <input type="tel" name="phone">
+                    <br>
+                    <input type="submit" name="submit">
+                    <input type="reset" name="reset">
+                </fieldset>
+                <p>Прогресс тех. осмотра</p>
+                <progress value="25" max="100"></progress>
+                <fieldset>
+                    <legend>Обратная связь</legend>
+                    Оцените качество услуг<br>
+                    <input type="range" min="0" max="10" step="1" value="7"><br>
+                    Что бы хотелось улучшить?<br>
+                    <textarea name="comment" id="30" cols="50" rows="7" placeholder="Ваши предложения"></textarea>
+                    <br>
+                    Порекомедуете наш сервис?<br>
+                    <label for="yes">ДА</label>
+                    <input type="radio" id="yes" name="choise" value="yes" checked>
+                    <label for="no">Нет</label>
+                    <input type="radio" id="no" name="choise" value="no">
+                </fieldset>
+            </form>
+            <ol type="a">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-block">
+            <p class="footer-text">Skillfactory</p>
 
 
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,5 +1,17 @@
-text {
-color: rgb(0, 0, 0);
-font-size: 50px;
-
+html, body {
+margin: 0;
+padding: 0;
+font-family: Arial;
 }
+
+.header {background-color: aliceblue;}
+
+.container {
+width: 1210px;
+padding: 0 20px;
+margin: 0 auto;
+box-sizing: border-box;
+}
+.footer {background-color: antiquewhite;}
+
+.footer-text {text-align: center;}
